@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.container {
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+div.container div.boxes {
+    display: flex;
+    margin: 20px auto;
+    font-size: 17px;
+    font-family: "Comic Sans MS";
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+div.container div.boxes:nth-child(even) {
+    transform: translateX(-1000px) !important;
+}
+
+div.container div.boxes:nth-child(odd) {
+    transform: translateX(1000px);
+}
+
+div.container div.boxes.show {
+    transform: translateX(0) !important;
+}
